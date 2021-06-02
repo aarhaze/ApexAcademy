@@ -7,6 +7,6 @@
   ],
   "name": "ApexAcademy",
   "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sfdcLoginUrl": "https://demo-16a-dev-ed.my.salesforce.com",
   "sourceApiVersion": "51.0"
 }

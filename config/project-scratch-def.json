@@ -1,7 +1,10 @@
 {
-  "orgName": "aaron company",
+  "orgName": "Apex Academy",
   "edition": "Developer",
   "features": ["EnableSetPasswordInApi"],
+  "adminEmail": "aarhaze@outlook.com",
+  "description": "Scratch org for Apex Academy course.",
+  "hasSampleData": true,
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true

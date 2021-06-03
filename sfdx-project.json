@@ -3,6 +3,18 @@
     {
       "path": "force-app",
       "default": true
+    },
+    {
+      "path": "AA_BeginnersGuide",
+      "default": false
+    },
+    {
+      "path": "AA_CodingTechniques",
+      "default": false
+    },
+    {
+      "path": "AA_SOQL",
+      "default": false
     }
   ],
   "name": "ApexAcademy",

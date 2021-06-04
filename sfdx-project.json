@@ -15,6 +15,10 @@
     {
       "path": "AA_SOQL",
       "default": false
+    },
+    {
+      "path": "AarHaze",
+      "default": false
     }
   ],
   "name": "ApexAcademy",

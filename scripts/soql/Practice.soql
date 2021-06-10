@@ -1,0 +1,60 @@
+
+// 02
+SELECT Id
+  FROM Account
+ WHERE NumberOfEmployees > 50
+   AND AnnualRevenue >= 100000
+
+// 03
+SELECT Id,
+       Title
+  FROM Contact
+  WHERE Title IN ('CEO', 'VP')
+  AND AccountId = null
+
+// 04
+SELECT Birthdate
+  FROM Contact
+ WHERE Birthdate >= 2000-01-01
+   AND Birthdate <= 2000-12-31
+   AND (Birthdate < 2000-05-01 OR Birthdate >= 2000-06-01)
+
+// 05
+SELECT Id
+  FROM Contact
+ WHERE (Title = 'Sales Manager' AND Account.AnnualRevenue > 90000)
+    OR (Account.NumberOfEmployees > 75 AND Account.Industry = 'Finance')
+
+// 06
+SELECT Email
+  FROM Contact
+ WHERE Email LIKE '%Outlook.com'
+    OR Account.Industry = 'Government'
+
+// 07
+SELECT Name
+  FROM Contact
+  WHERE Title LIKE '%Sales%'
+  OR (Title = 'CEO' AND Account.Industry IN ('Technology', 'Finance'))
+
+// 08
+  SELECT Name
+    FROM Account
+ORDER BY AnnualRevenue DESC,
+         NumberOfEmployees ASC
+   LIMIT 10
+
+// 09
+SELECT Description,
+       (SELECT Name
+          FROM Contacts
+         WHERE Email 
+          LIKE '%5')
+  FROM Account
+  
+// 10
+  SELECT AccountId,
+         COUNT(Id),
+         MAX(Birthdate)
+    FROM Contact
+GROUP BY AccountId

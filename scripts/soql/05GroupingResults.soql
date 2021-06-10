@@ -1,0 +1,15 @@
+
+// Calulate the sum of all amounts for each stage
+
+   SELECT StageName,
+          SUM(Amount),
+          MAX(CloseDate),
+          MIN(ExpectedRevenue),
+          AVG(Account.AnnualRevenue),
+          COUNT(Id)               
+     FROM Opportunity
+    WHERE Amount != null
+ GROUP BY StageName                 
+ 
+ // SUM(Amount) - Type of aggregration - Other fields can be added if they are fields that can be aggregated
+ // GROUP BY StageName - Which field to aggregrate

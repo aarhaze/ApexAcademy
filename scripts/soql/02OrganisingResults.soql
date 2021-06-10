@@ -1,0 +1,9 @@
+
+SELECT   Id,
+         Name,
+         Amount,
+         StageName
+FROM     Opportunity
+WHERE    StageName != 'Closed/Lost'
+ORDER BY StageName DESC, Amount DESC
+LIMIT    10

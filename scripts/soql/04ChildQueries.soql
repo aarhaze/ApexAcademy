@@ -1,0 +1,10 @@
+
+SELECT Id,
+       Amount,
+       StageName,
+       (SELECT Role,
+               ContactId
+          FROM OpportunityContactRoles)
+  FROM Opportunity
+
+// Inner Query

@@ -1,0 +1,19 @@
+/*
+=== User Description
+key           label
+────────────  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Username      test-hxgze8q6buqs@example.com
+Profile Name  System Administrator
+Id            0051y0000023Ze5AAE
+Org Id        00D1y0000000YoFEAU
+Access Token  00D1y0000000YoF!AQcAQNX4dmNv6fZvsizp_tVJN.PgbqOs1cciC8HYENhf1m4SXDSCx5re.Yz50vX6YGAKwC5ItkjEIzez7gbcwmzJp0FRdwv5
+Instance Url  https://innovation-speed-6417-dev-ed.cs114.my.salesforce.com
+Login Url     https://CS114.salesforce.com
+Alias         ApexAcademy_ScrOrg
+Password      XQE|0kxnS3*3R
+*/
+
+// https://developer.salesforce.com/tools/vscode/en/soql/writing
+
+
+

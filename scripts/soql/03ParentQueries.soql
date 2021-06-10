@@ -1,0 +1,12 @@
+
+SELECT Id,
+       Amount,
+       StageName,
+       Account.Name,
+       Account.Industry,
+       Account.Website,
+       Account.Owner.Username
+  FROM Opportunity
+ WHERE Account.Industry = 'Energy'
+   AND Account.AnnualRevenue > 5000
+   AND CreatedBy.Email != null

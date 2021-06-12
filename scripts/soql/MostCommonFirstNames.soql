@@ -1,0 +1,8 @@
+
+  SELECT FirstName,
+         COUNT(Id)
+    FROM Contact
+   WHERE FirstName != null
+GROUP BY FirstName
+ORDER BY count(Id) DESC
+   LIMIT 50
